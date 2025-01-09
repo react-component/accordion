@@ -1,5 +1,6 @@
 import type { CSSMotionProps } from 'rc-motion';
 import type * as React from 'react';
+import type { ReactNode } from 'react';
 
 export type CollapsibleType = 'header' | 'icon' | 'disabled';
 
@@ -16,6 +17,7 @@ export interface ItemType
   > {
   key?: CollapsePanelProps['panelKey'];
   label?: CollapsePanelProps['header'];
+  wrapper?: ReactNode;
   ref?: React.RefObject<HTMLDivElement>;
 }
 
